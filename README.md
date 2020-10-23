@@ -5,7 +5,7 @@ media type with the new authenticated oEmbed endpoints.
 The [Media entity Facebook module](https://www.drupal.org/project/media_entity_facebook) is not supported by Drupal's
 security advisory policy.
 
-## Required Drupal Core Patches
+## Required Drupal core patches
 This was originally created in Drupal 8.9.6.
 
 The following patches were required. Review the issues mentioned
@@ -22,7 +22,7 @@ changed direction. The patch mentioned here is likely the best option.
 "3168301-13: oEmbed validator should use the urlResolver to get the resource URL": "https://www.drupal.org/files/issues/2020-10-02/3168301-13.patch"
 ```
 
-## Facebook App Requirements
+## Facebook App requirements
 [Facebook is set to deprecate their open oEmbed endpoints,
 used to embed posts and videos in webpages, with authenticated
 endpoints on October 24, 2020.](https://developers.facebook.com/docs/plugins/oembed)
@@ -34,7 +34,7 @@ In order to retrieve a thumbnail image for videos at the
 This endpoint requires the 'pages_read_engagement' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details.
 ```
 
-## Environment Variables
+## Environment variables
 This solution requires the following environment variables:
 ```
 FACEBOOK_APP_ID

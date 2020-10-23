@@ -23,9 +23,12 @@ changed direction. The patch mentioned here is likely the best option.
 ```
 
 ## Facebook App Requirements
-As of October 24, 2020, Facebook's oEmbed endpoints require a Facebook
-App. In order to retrieve a thumbnail image for videos at the
-{video-id}/picture endpoint, the App requires permissions:
+[Facebook is set to deprecate their open oEmbed endpoints,
+used to embed posts and videos in webpages, with authenticated
+endpoints on October 24, 2020.](https://developers.facebook.com/docs/plugins/oembed)
+
+In order to retrieve a thumbnail image for videos at the
+`{video-id}/picture` endpoint, the App requires permissions:
 
 ```
 This endpoint requires the 'pages_read_engagement' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details.
@@ -39,3 +42,8 @@ FACEBOOK_APP_SECRET
 FACEBOOK_APP_CLIENT_TOKEN
 ```
 These variables must be available in all environments.
+
+## Customize to fit your needs
+This module was generalized from a custom module. Feel free
+to use it as a custom module and tweak to meet your specific
+needs.

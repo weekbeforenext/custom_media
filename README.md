@@ -1,11 +1,11 @@
-##Summary
+## Summary
 This module was created to support the creation of a Facebook
 media type with the new authenticated oEmbed endpoints.
 
 The [Media entity Facebook module](https://www.drupal.org/project/media_entity_facebook) is not supported by Drupal's
 security advisory policy.
 
-##Required Drupal Core Patches
+## Required Drupal Core Patches
 This was originally created in Drupal 8.9.6.
 
 The following patches were required. Review the issues mentioned
@@ -22,7 +22,7 @@ changed direction. The patch mentioned here is likely the best option.
 "3168301-13: oEmbed validator should use the urlResolver to get the resource URL": "https://www.drupal.org/files/issues/2020-10-02/3168301-13.patch"
 ```
 
-##Environment Variables
+## Environment Variables
 This solution requires the following environment variables:
 ```
 FACEBOOK_APP_ID

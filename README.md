@@ -22,6 +22,15 @@ changed direction. The patch mentioned here is likely the best option.
 "3168301-13: oEmbed validator should use the urlResolver to get the resource URL": "https://www.drupal.org/files/issues/2020-10-02/3168301-13.patch"
 ```
 
+## Facebook App Requirements
+As of October 24, 2020, Facebook's oEmbed endpoints require a Facebook
+App. In order to retrieve a thumbnail image for videos at the
+{video-id}/picture endpoint, the App requires permissions:
+
+```
+This endpoint requires the 'pages_read_engagement' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details.
+```
+
 ## Environment Variables
 This solution requires the following environment variables:
 ```

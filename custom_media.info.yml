@@ -1,0 +1,7 @@
+name: Custom Media
+description: Contains Media related overrides.
+package: Custom
+
+type: module
+core: 8.x
+dependencies: {  }

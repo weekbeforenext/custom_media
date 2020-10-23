@@ -1,0 +1,7 @@
+services:
+  custom_media.base:
+    class: Drupal\custom_media\CustomMediaServiceBase
+    arguments: [ '@http_client', '@logger.factory' ]
+  custom_media.facebook_graph:
+    class: Drupal\custom_media\CustomMediaFacebookGraphService
+    arguments: [ '@http_client', '@logger.factory' ]
